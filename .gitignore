@@ -25,3 +25,6 @@ dist-ssr
 *.zip
 node_modules/
 .env
+*.zip 
+node_modules/ 
+.env 
