@@ -1,0 +1,136 @@
+/* .support-form {
+  max-width: 500px;
+  margin: 60px auto;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.support-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+}
+
+.support-form input,
+.support-form select,
+.support-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.support-form input:focus,
+.support-form select:focus,
+.support-form textarea:focus {
+  border-color: #3e8ed0;
+  outline: none;
+}
+
+.support-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.support-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3e8ed0;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.support-form button:hover {
+  background-color: #3477b5;
+} */
+
+
+
+.support-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.support-form h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.support-form input,
+.support-form select,
+.support-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.support-form input:focus,
+.support-form select:focus,
+.support-form textarea:focus {
+  /* border-color: green; */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+.support-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 1em;
+}
+
+.support-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.support-form button {
+  width: 100%;
+  padding: 12px;
+  background-color:gold;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.support-form button:hover {
+  border: 2px solid green;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .support-form {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}

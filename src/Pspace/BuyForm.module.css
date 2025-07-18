@@ -1,0 +1,599 @@
+.Buy_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100svh;
+  background-color: #e0ffe0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 999;
+  border-radius: 10px;
+}
+
+.base1 {
+  width: 15%;
+  height: 90%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.cross {
+  width: 20%;
+  height: 10%;
+  cursor: pointer;
+}
+
+.Order_img {
+  width: 100%;
+  height: 50%;
+}
+
+.photo {
+  width: 100%;
+  height: 70%;
+}
+
+.photo img {
+  width: 85%;
+  height: 90%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.Quantity {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.Qt,
+.inc,
+.num,
+.dec {
+  width: 20%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.inc,
+.dec {
+  cursor: pointer;
+}
+.Total {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.total {
+  width: 30%;
+  height: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.amount {
+  width: 35%;
+  height: 100%;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.base2 {
+  width: 60%;
+  height: 90%;
+  background-color: white;
+  background-image: url("../assets/Leaves.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.Rect {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.Rect1,
+.Rect2 {
+  width: 30%;
+  height: 7%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Rect2 {
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  border: 3px solid #51c63f;
+}
+
+.key {
+  width: 25%;
+  height: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value {
+  width: 60%;
+  height: 100%;
+  background-color: white;
+}
+
+.value input,
+.value textarea,
+.value select {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #c2c0c0;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.payment-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  gap: 15px;
+}
+
+.payment-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.payment-options input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-options input[type="radio"]:checked {
+  border: 2px solid black;
+}
+
+.payment-options input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #51c63f;
+  display: none;
+}
+
+.payment-options input[type="radio"]:checked::before {
+  display: block;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .Buy_bg{
+    flex-direction: column;
+  }
+   .cross {
+  font-size: 0.7rem;
+  height: 15%;
+  }
+  .base1 {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+  border-bottom: none;
+  }
+  .Order_img {
+  width: 60%;
+  height: 80%;
+  }
+
+  .photo {
+    width: 100%;
+    height: 70%;
+  }
+
+  .photo img {
+    width: 80%;
+    height: 90%;
+  }
+
+  .base2 {
+  width: 80%;
+  /* background-size:contain; */
+  border-left: 2px solid black;
+  border-top: none;
+  }
+  .cross {
+  font-size: 0.8rem;
+  }
+  .Qt,
+  .inc,
+  .num,
+  .dec {
+    width:15%;
+    font-size: 0.7rem;
+  }
+  .total {
+  width: 40%;
+  font-size: 0.7rem;
+  }
+  .amount {
+    width: 40%;
+    font-size: 0.6rem;
+  }
+  .key {
+    width: 30%;
+    font-size: 0.7rem;
+  }
+  .value {
+    width: 65%;
+    font-size: 0.6rem;
+  }
+  .value input,
+  .value textarea,
+  .value select {
+    border: 2px solid #c2c0c0;
+    font-size: 0.5rem;
+    padding: 5px;
+  }
+  .Rect1,
+  .Rect2 {
+    width: 50%;
+    height: 7%;
+    font-size: 0.7rem;
+  }
+  .Rect2 {
+    border: 2px solid #51c63f;
+  }
+    .payment-options {
+    padding-top: 6px;
+    gap: 5px;
+  }
+
+.payment-options label {
+  font-size: 0.45rem;
+  gap:2px;
+}
+
+.payment-options input[type="radio"] {
+  width: 7px;
+  height: 7px;
+}
+
+.payment-options input[type="radio"]:checked {
+  border: 2px solid black;
+}
+.payment-options input[type="radio"]::before {
+  width: 6px;
+  height: 6px;
+}
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .Buy_bg{
+    flex-direction: column;
+  }
+   .cross {
+  font-size: 0.7rem;
+  height: 15%;
+  }
+  .base1 {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+  border-bottom: none;
+  }
+  .Order_img {
+  width: 60%;
+  height: 80%;
+  }
+  .photo {
+    width: 100%;
+    height: 70%;
+  }
+  .photo img {
+    width: 80%;
+    height: 90%;
+  }
+  .base2 {
+  width: 80%;
+  background-size:contain;
+  border-left: 2px solid black;
+  border-top: none;
+  }
+  .cross {
+  font-size: 0.8rem;
+  }
+  .Qt,
+  .inc,
+  .num,
+  .dec {
+    width:15%;
+    font-size: 0.7rem;
+  }
+  .total {
+  width: 40%;
+  font-size: 0.7rem;
+  }
+  .amount {
+    width: 40%;
+    font-size: 0.6rem;
+  }
+  .key {
+    width: 30%;
+    font-size: 0.6rem;
+  }
+  .value {
+    width: 60%;
+    font-size: 0.6rem;
+  }
+  .value input,
+  .value textarea,
+  .value select {
+    border: 2px solid #c2c0c0;
+    font-size: 0.6rem;
+    padding: 5px;
+  }
+  .Rect1,
+  .Rect2 {
+    width: 50%;
+    height: 7%;
+    font-size: 0.6rem;
+  }
+  .Rect2 {
+    border: 2px solid #51c63f;
+  }
+    .payment-options {
+    padding-top: 6px;
+    gap: 5px;
+  }
+
+.payment-options label {
+  font-size: 0.5rem;
+  gap:3px;
+}
+
+.payment-options input[type="radio"] {
+  width: 8px;
+  height: 8px;
+}
+
+.payment-options input[type="radio"]:checked {
+  border: 2px solid black;
+}
+.payment-options input[type="radio"]::before {
+  width: 7px;
+  height: 7px;
+}
+ 
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+  .Buy_bg{
+    flex-direction: column;
+  }
+   .cross {
+  font-size: 0.7rem;
+  }
+  .base1 {
+  width: 80%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+  border-bottom: none;
+  }
+  .Order_img {
+  width: 60%;
+  height: 80%;
+  }
+
+  .photo {
+    width: 100%;
+    height: 70%;
+  }
+
+  .photo img {
+    width: 80%;
+    height: 90%;
+  }
+
+  .base2 {
+  width: 80%;
+  background-size:contain;
+  border-left: 2px solid black;
+  border-top: none;
+  }
+  .cross {
+  font-size: 0.8rem;
+  }
+  .Qt,
+  .inc,
+  .num,
+  .dec {
+    width:15%;
+    font-size: 0.7rem;
+  }
+  .total {
+  width: 40%;
+  font-size: 0.7rem;
+  }
+  .amount {
+    width: 40%;
+    font-size: 0.6rem;
+  }
+  .key {
+    width: 30%;
+    font-size: 0.7rem;
+  }
+  .value {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .value input,
+  .value textarea,
+  .value select {
+    border: 2px solid #c2c0c0;
+    font-size: 0.6rem;
+    padding: 5px;
+  }
+  .Rect1,
+  .Rect2 {
+    width: 50%;
+    height: 7%;
+    font-size: 0.7rem;
+  }
+  .Rect2 {
+    border: 2px solid #51c63f;
+  }
+    .payment-options {
+    padding-top: 6px;
+    gap: 5px;
+  }
+
+.payment-options label {
+  font-size: 0.6rem;
+  gap:3px;
+}
+
+.payment-options input[type="radio"] {
+  width: 10px;
+  height: 10px;
+}
+
+.payment-options input[type="radio"]:checked {
+  border: 2px solid black;
+}
+.payment-options input[type="radio"]::before {
+  width: 7px;
+  height: 7px;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .base1 {
+  width: 20%;
+  height: 90%;
+  }
+  .base2 {
+  width: 70%;
+  background-size:contain;
+  }
+  .cross {
+  font-size: 0.8rem;
+  }
+  .Qt,
+  .inc,
+  .num,
+  .dec {
+    font-size: 0.8rem;
+  }
+  .total {
+  width: 50%;
+  font-size: 0.9rem;
+  }
+  .amount {
+    width: 50%;
+    font-size: 0.7rem;
+  }
+  .key {
+    width: 30%;
+    font-size: 1rem;
+  }
+  .value {
+    width: 60%;
+    font-size: 0.8rem;
+  }
+  .value input,
+  .value textarea,
+  .value select {
+    border: 2px solid #c2c0c0;
+    font-size: 0.8rem;
+    padding: 5px;
+  }
+  .Rect1,
+  .Rect2 {
+    width: 30%;
+    height: 7%;
+    font-size: 1rem;
+  }
+  .Rect2 {
+    border: 2px solid #51c63f;
+  }
+    .payment-options {
+    padding-top: 6px;
+    gap: 10px;
+  }
+.payment-options label {
+  font-size: 0.8rem;
+}
+.payment-options input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+.payment-options input[type="radio"]:checked {
+  border: 2px solid black;
+}
+.payment-options input[type="radio"]::before {
+  width: 8px;
+  height: 8px;
+}
+}
+

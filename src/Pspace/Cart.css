@@ -1,0 +1,468 @@
+.CART {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100svh;
+  height: fit-content;
+  background-color: #fbbc42;
+  justify-content: space-evenly;
+  flex-direction: column;
+  /* overflow-y: auto; */
+  z-index: 999;
+}
+.arr_box{
+  width:10%;
+}
+.cart-items-scroll {
+  max-height: 30vh;       
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* Optional: Style the scrollbar */
+.cart-items-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-items-scroll::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 4px;
+}
+
+.cart-items-scroll::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to top right, #51c63f,white);
+}
+
+.phrase {
+  width: 90%;
+  min-height: 60px;
+  background-color: white;
+  font-size: 1.2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px 20px;
+  margin: 0 auto 20px auto;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #333;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.phrase_bag {
+  font-size: 1.5rem;
+  color: #51c63f;
+  padding-left: 10px;
+}
+
+.cart_prod {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  min-height: 150px;
+  border-radius: 10px;
+  background-color: white;
+  border: 3px solid rgb(194, 190, 190);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.c_image {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.c_image img {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+.c_details {
+  width: 65%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.c_name {
+  display: flex;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.c_key {
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.c_value {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.c_value button {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #51c63f;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.c_value button:hover {
+  background-color: #51c63f;
+  color: white;
+}
+
+.Delete {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.Grand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.proceed-btn {
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  border: 3px solid #1d7e2b;
+  color: #1d7e2b;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.proceed-btn:hover {
+  background-color: #1d7e2b;
+  color: white;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .CART {
+  min-height: 100svh;
+  height: fit-content;
+}
+.arr_box{
+  width:30%;
+  font-size: 0.9rem;
+}
+
+.phrase {
+  width: 90%;
+  max-height: 30px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  padding-left: 30px;
+}
+
+.phrase_bag {
+  font-size: 1rem;
+}
+
+.cart_prod {
+  max-width: 320px;
+  max-height: 80px;
+}
+
+.c_image {
+  width: 25%;
+  height: 100%;
+  padding: 5px;
+}
+
+.c_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.c_details {
+  width: 80%;
+}
+
+.c_name {
+  font-size: 0.75rem;
+  margin-bottom: 4px;
+}
+
+.c_key {
+  margin-right: 6px;
+}
+
+.c_value {
+  gap: 10px;
+}
+
+.c_value button {
+  font-size: 0.7rem;
+}
+
+.Delete {
+  width: 5%;
+  font-size: 1.5rem;
+}
+
+.Grand {
+  font-size: 1rem;
+}
+
+.proceed-btn {
+  font-size: 0.9rem;
+}
+}
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+.arr_box{
+  width:20%;
+  font-size: 0.9rem;
+}
+
+.phrase {
+  width: 90%;
+  max-height: 30px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  padding-left: 50px;
+}
+
+.phrase_bag {
+  font-size: 1rem;
+}
+
+.cart_prod {
+  max-width: 320px;
+  max-height: 80px;
+}
+
+.c_image {
+  width: 25%;
+  height: 100%;
+  padding: 5px;
+}
+
+.c_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.c_details {
+  width: 80%;
+}
+
+.c_name {
+  font-size: 0.7rem;
+  margin-bottom: 4px;
+}
+
+.c_key {
+  margin-right: 6px;
+}
+
+.c_value {
+  gap: 10px;
+}
+
+.c_value button {
+  font-size: 0.7rem;
+}
+
+.Delete {
+  width: 5%;
+  font-size: 1.5rem;
+}
+
+.Grand {
+  font-size: 1rem;
+}
+
+.proceed-btn {
+  font-size: 0.9rem;
+}
+}
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .CART {
+  min-height: 100svh;
+  height: fit-content;
+}
+.arr_box{
+  width:15%;
+  font-size: 1rem;
+}
+
+.phrase {
+  width: 90%;
+  max-height: 30px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+    padding-left: 50px;
+}
+
+.phrase_bag {
+  font-size: 1.2rem;
+  padding-left: 5px;
+}
+
+.cart_prod {
+  max-height: 100px;
+}
+
+.c_image {
+  width: 25%;
+  height: 100%;
+  padding: 5px;
+}
+
+.c_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.c_details {
+  width: 75%;
+}
+
+.c_name {
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+.c_key {
+  margin-right: 6px;
+}
+
+.c_value {
+  gap: 10px;
+}
+
+.c_value button {
+  font-size: 0.8rem;
+}
+
+.Delete {
+  width: 5%;
+  font-size: 1rem;
+}
+
+.Grand {
+  font-size: 1.1rem;
+  padding-top: 20px;
+}
+
+.proceed-btn {
+  font-size: 1rem;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .CART {
+  min-height: 100svh;
+  height: fit-content;
+}
+.arr_box{
+  font-size: 1rem;
+}
+
+.phrase {
+  width: 90%;
+  max-height: 30px;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.phrase_bag {
+  font-size: 1.2rem;
+  padding-left: 10px;
+}
+
+.cart_prod {
+  max-height: 150px;
+}
+
+.c_image {
+  width: 25%;
+  height: 100%;
+  padding: 10px;
+}
+
+.c_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.c_details {
+  width: 75%;
+}
+
+.c_name {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.c_key {
+  margin-right: 6px;
+}
+
+.c_value {
+  gap: 10px;
+}
+
+.c_value button {
+  font-size: 0.9rem;
+}
+
+.Delete {
+  width: 5%;
+  font-size: 1rem;
+}
+
+.Grand {
+  font-size: 1.2rem;
+  padding-top: 20px;
+}
+
+.proceed-btn {
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+}
+
+
