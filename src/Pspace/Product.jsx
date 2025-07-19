@@ -65,6 +65,10 @@ const Prod_page = () => {
     const closeSidebar = () => setSidebarOpen(false);
 
     useEffect(() => {
+    document.title = 'Fertilizer Resource Hub 🌱'; // 👈 Your custom title
+  }, []);
+
+    useEffect(() => {
         const handleScroll = () => {
             if (!screen1Ref.current || selectedFertilizer) return;
             const sticky = screen1Ref.current.offsetTop;
@@ -148,79 +152,6 @@ const Prod_page = () => {
         const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
     };
-
-
-//     const handleSubmit = async () => {
-//     const {
-//         fullName,
-//         email,
-//         phone,
-//         city,
-//         state,
-//         pinCode,
-//         address,
-//         payment,
-//     } = formData;
-
-//     if (
-//         !fullName || !email || !phone || !city ||
-//         !state || !pinCode || !address || !payment
-//     ) {
-//         alert("Please fill out all fields.");
-//         return;
-//     }
-
-//     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     const phoneRegex = /^[6-9]\d{9}$/;
-//     const pinRegex = /^\d{6}$/;
-
-//     if (!emailRegex.test(email)) {
-//         alert("Invalid email format.");
-//         return;
-//     }
-
-//     if (!phoneRegex.test(phone)) {
-//         alert("Enter a valid 10-digit phone number.");
-//         return;
-//     }
-
-//     if (!pinRegex.test(pinCode)) {
-//         alert("PIN code must be a 6-digit number.");
-//         return;
-//     }
-
-//     // 🔄 Build data to send
-//     const orderData = {
-//         fertilizerName: selectedFertilizer.name,
-//         fertilizerImage: selectedFertilizer.image,
-//         quantity,
-//         totalPrice,
-//         ...formData
-//     };
-
-//     try {
-//         const res = await fetch("http://localhost:5000/orders/place", {
-//             method: "POST",
-//             headers: {
-//                 "Content-Type": "application/json"
-//             },
-//             body: JSON.stringify(orderData)
-//         });
-
-//         if (!res.ok) throw new Error("Order submission failed");
-
-//         const data = await res.json();
-
-//         // ✅ Hide buy form, show confirmation
-//         setShowBuyForm(false);
-//         setConfirmedOrder(data.order);
-//         setShowConfirmation(true);
-//     } catch (err) {
-//         console.error("Order failed:", err);
-//         alert("Something went wrong while placing the order.");
-//     }
-// };
-    
 
 
     const handleSubmit = async () => {
