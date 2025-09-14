@@ -465,7 +465,7 @@ const Prod_page = () => {
             setSelectedType={setSelectedType}
             />
 
-            {/* <div>
+            <div>
             <div className="Need">
                 <button onClick={handleNeedClick}>Need</button>
             </div>
@@ -474,7 +474,7 @@ const Prod_page = () => {
                 <SupportForm onClose={handleCloseForm} />
                 </div>
             )}
-            </div> */}
+            </div>
             
             {/* Fertilizer Importance */}
             <WhyFertilizers showScreen2={showScreen2} setShowScreen2={setShowScreen2} />
